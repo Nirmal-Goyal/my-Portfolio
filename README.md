@@ -1,2 +1,5 @@
-# my-Portfolio
-Personal developer portfolio built with React
+# Portfolio
+
+Personal developer portfolio built using React.
+
+Status: In progress 🚧
