@@ -1,10 +1,14 @@
 import Hero from "./sections/Hero"
+import Navbar from "./layout/Navbar"
 
 function App() {
   return (
-    <main>
-      <Hero />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </>
   )
 }
 
