@@ -1,8 +1,9 @@
+import { Hero } from "./sections/Hero"
+
 function App() {
   return (
     <main>
-      <h1>Nirmal Goyal</h1>
-      <p>Software Developer</p>
+      <Hero />
     </main>
   )
 }
