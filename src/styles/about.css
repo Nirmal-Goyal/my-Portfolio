@@ -1,6 +1,7 @@
 .about {
     padding: 6rem 10%;
     max-width: 900px;
+    scroll-margin-top: 5rem;
 }
 
 .about h2 {
