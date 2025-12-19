@@ -44,3 +44,20 @@
     font-weight: 500;
     color: #111;
 }
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #111;
+    border-bottom: 1px solid transparent;
+}
+
+.project-links a:hover {
+    border-color: #111;
+}

@@ -12,15 +12,27 @@ const Projects = () => {
                         <p>{project.description}</p>
                         <p className="tech">{project.tech}</p>
 
-                        {project.liveLink && (
-                            <a 
-                                href={project.liveLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo
-                            </a>
-                        )}
+                        <div className="project-links">
+                            {project.liveLink && (
+                                <a
+                                    href={project.liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Live Demo
+                                </a>
+                            )}
+
+                            {project.repoLink && (
+                                <a
+                                    href={project.repoLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Github
+                                </a>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
