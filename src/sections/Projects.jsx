@@ -10,19 +10,16 @@ const Projects = () => {
                     <div className="project-card" key={index}>
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
-                        <p className="tech">{project.tech}</p>
+                        <ul>
+                            {project.highlights.map((point, i)=> (
+                                <li key={i}>{point}</li>
+                            ))}
+                        </ul>
+                        <p className="tech">
+                            <strong>Tech:</strong> {project.tech}
+                        </p>
 
                         <div className="project-links">
-                            {project.liveLink && (
-                                <a
-                                    href={project.liveLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Live Demo
-                                </a>
-                            )}
-
                             {project.repoLink && (
                                 <a
                                     href={project.repoLink}
@@ -30,6 +27,16 @@ const Projects = () => {
                                     rel="noopener noreferrer"
                                 >
                                     Github
+                                </a>
+                            )}
+
+                            {project.liveLink && (
+                                <a
+                                    href={project.liveLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Live Demo
                                 </a>
                             )}
                         </div>
